@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUVIKK — Elegance in Every Thread | Premium Sarees Online</title>
+  <meta name="description" content="Discover SUVIKK's curated collection of Linen, Mul Cotton and Tissue sarees — each with an unstitched matching blouse. Premium Indian sarees from ₹1,000 onwards. Shop on WhatsApp." />
+  <meta property="og:title" content="SUVIKK — Elegance in Every Thread | Premium Sarees Online" />
+  <meta property="og:description" content="Discover SUVIKK's curated collection of Linen, Mul Cotton and Tissue sarees — each with an unstitched matching blouse. Premium Indian sarees from ₹1,000 onwards. Shop on WhatsApp." />
+  <meta property="og:url" content="https://suvikk.com" />
+  <meta property="og:type" content="website" />
+  <!-- OG image: add once available → <meta property="og:image" content="https://suvikk.com/assets/og-image.jpg" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="google-site-verification" content="" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7f0e3'/%3E%3Cpath d='M16 26 C16 26 8 18 8 12 C8 7 11.6 4 16 4 C20.4 4 24 7 24 12 C24 18 16 26 16 26Z' fill='%23c4963a'/%3E%3Cpath d='M16 26 C16 26 4 22 3 16 C2 11 5 7 9 6' stroke='%23c4963a' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Cpath d='M16 26 C16 26 28 22 29 16 C30 11 27 7 23 6' stroke='%23c4963a' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600&family=Lato:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+<div class="c-dot" id="cDot" aria-hidden="true"></div>
+<div class="c-ring" id="cRing" aria-hidden="true"></div>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  <span>Celebrate the launch of SUVIKK with 10% OFF on your first order ♡&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping on All Orders · Use code: <strong>SUVIKK10</strong></span>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav" x-data="{ open: false }">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="SUVIKK — Elegance in Every Thread, home">
+      <img src="assets/suvikk-logo.jpg" alt="SUVIKK" class="nav__logo-img" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="#collections" class="nav__link">Collections</a></li>
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#lookbook" class="nav__link">Lookbook</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/918796529211?text=Hi%20Sushmita!%20I%27d%20love%20to%20explore%20SUVIKK%27s%20collection.%20Can%20you%20help%20me%20find%20the%20right%20saree%3F" class="btn btn--gold nav__cta" target="_blank" rel="noopener noreferrer">Shop on WhatsApp</a>
+    <button class="nav__hamburger" @click="open = !open" :aria-expanded="open.toString()" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+  <div class="nav__mobile" :class="{ 'nav__mobile--open': open }">
+    <ul class="nav__mobile-links">
+      <li><a href="#collections" class="nav__link" @click="open = false">Collections</a></li>
+      <li><a href="#about" class="nav__link" @click="open = false">About</a></li>
+      <li><a href="#lookbook" class="nav__link" @click="open = false">Lookbook</a></li>
+      <li><a href="#contact" class="nav__link" @click="open = false">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/918796529211?text=Hi%20Sushmita!%20I%27d%20love%20to%20explore%20SUVIKK%27s%20collection.%20Can%20you%20help%20me%20find%20the%20right%20saree%3F" class="btn btn--gold" target="_blank" rel="noopener noreferrer" @click="open = false">Shop on WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__lotus" aria-hidden="true">
+    <svg viewBox="0 0 240 260" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path d="M120 220 C120 220 72 172 72 129 C72 93 93 69 120 63 C147 69 168 93 168 129 C168 172 120 220 120 220Z" fill="#c4963a"/>
+      <path d="M120 220 C120 220 48 183 36 141 C27 109 44 81 66 75" stroke="#c4963a" stroke-width="4" fill="none"/>
+      <path d="M120 220 C120 220 192 183 204 141 C213 109 196 81 174 75" stroke="#c4963a" stroke-width="4" fill="none"/>
+      <path d="M120 220 C120 220 24 201 18 165 C13 137 28 111 48 102" stroke="#c4963a" stroke-width="2.5" fill="none" opacity="0.55"/>
+      <path d="M120 220 C120 220 216 201 222 165 C227 137 212 111 192 102" stroke="#c4963a" stroke-width="2.5" fill="none" opacity="0.55"/>
+      <ellipse cx="120" cy="222" rx="28" ry="8" fill="#c4963a" opacity="0.25"/>
+    </svg>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="hero__label">Est. 2026&nbsp;&nbsp;·&nbsp;&nbsp;Gurgaon, India&nbsp;&nbsp;·&nbsp;&nbsp;@suvikkofficial</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Dressed in</span>
+        <span class="hero__title-line hero__title-line--gold">Elegance.</span>
+        <span class="hero__title-line">Woven with</span>
+        <span class="hero__title-line hero__title-line--gold">Tradition.</span>
+      </h1>
+      <p class="hero__sub">Every saree in our collection is chosen for the woman who values craftsmanship as much as style. Linen, Mul Cotton, Tissue — curated with love.</p>
+      <div class="hero__actions">
+        <a href="#collections" class="btn btn--gold">Explore Collections</a>
+        <a href="https://wa.me/918796529211?text=Hi%20Sushmita!%20I%27d%20love%20to%20explore%20SUVIKK%27s%20collection.%20Can%20you%20help%20me%20find%20the%20right%20saree%3F" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Shop on WhatsApp →</a>
+      </div>
+    </div>
+    <div class="hero__logo-visual" aria-hidden="true">
+      <img src="assets/suvikk-logo.jpg" alt="" class="hero__logo-img" />
+    </div>
+    <p class="hero__vertical" aria-hidden="true">ELEGANCE IN EVERY THREAD</p>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- COLLECTIONS -->
+<section class="collections" id="collections">
+  <div class="container">
+    <p class="section-label reveal">What We Offer</p>
+    <h2 class="section-title reveal">THE COLLECTION</h2>
+    <div class="collections__grid">
+
+      <article class="card card--accent reveal" style="--delay:0s">
+        <div class="card__badge">★ Our Signature</div>
+        <div class="card__icon" aria-hidden="true">🌿</div>
+        <h3 class="card__title">Linen Sarees</h3>
+        <p class="card__desc">Breathable, lightweight linen draped in artisanal prints. Perfect for day wear and corporate occasions. Each saree comes with an unstitched matching blouse.</p>
+        <span class="card__tag">From ₹1,000</span>
+      </article>
+
+      <article class="card card--accent reveal" style="--delay:0.08s">
+        <div class="card__badge">★ Our Signature</div>
+        <div class="card__icon" aria-hidden="true">🪷</div>
+        <h3 class="card__title">Mul Cotton Sarees</h3>
+        <p class="card__desc">Soft mul cotton — the most comfortable fabric for long days. Available in handwork, printed and check patterns. Each saree comes with an unstitched matching blouse.</p>
+        <span class="card__tag">From ₹1,500</span>
+      </article>
+
+      <article class="card reveal" style="--delay:0.16s">
+        <div class="card__icon" aria-hidden="true">✨</div>
+        <h3 class="card__title">Tissue Sarees</h3>
+        <p class="card__desc">Sheer tissue weaves with a natural shimmer. For weddings, festivals, and evenings that deserve elegance.</p>
+        <span class="card__tag">From ₹3,000</span>
+      </article>
+
+      <article class="card card--accent reveal" style="--delay:0.24s">
+        <div class="card__badge">★ Artisanal Craft</div>
+        <div class="card__icon" aria-hidden="true">🧵</div>
+        <h3 class="card__title">Handwork Sarees</h3>
+        <p class="card__desc">Hand-embroidered sarees where every motif is placed with intention. No two pieces are exactly alike.</p>
+        <span class="card__tag">From ₹5,000</span>
+      </article>
+
+      <article class="card reveal" style="--delay:0.32s">
+        <div class="card__icon" aria-hidden="true">👗</div>
+        <h3 class="card__title">Unstitched Blouses</h3>
+        <p class="card__desc">Every saree at SUVIKK comes with an unstitched matching blouse — sourced and paired with the same care as the saree itself. Available as separate products too.</p>
+        <span class="card__tag">Sold separately</span>
+      </article>
+
+      <article class="card reveal" style="--delay:0.4s">
+        <div class="card__icon" aria-hidden="true">💛</div>
+        <h3 class="card__title">Price Range Guide</h3>
+        <p class="card__desc">From ₹1,000 everyday picks to ₹9,000+ heirloom pieces — find your occasion, find your budget.</p>
+        <span class="card__tag">5 price points</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+
+    <!-- Dedication -->
+    <div class="about__dedication reveal">
+      <p class="about__dedication-text">Special thanks to my father, mother, brother, and my husband for their endless love, belief, sacrifices, and support — because of them, I am able to live this dream today.</p>
+    </div>
+
+    <div class="about__grid">
+
+      <div class="about__visual reveal">
+        <div class="about__logo-card">
+          <img src="assets/suvikk-logo.jpg" alt="SUVIKK — Elegance in Every Thread" class="about__logo-img" />
+        </div>
+        <p class="about__caption">Founded by Sushmita · Gurgaon, 2026</p>
+      </div>
+
+      <div class="about__content">
+
+        <!-- OUR STORY -->
+        <div class="about__chapter reveal">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">A DREAM NINE<br>YEARS IN THE MAKING</h2>
+          <div class="about__body">
+            <p>SUVIKK was never started just to sell sarees. It started with a feeling, a memory, and a dream quietly living in my heart since 2017.</p>
+            <p>Growing up, I watched my mother preserve her sarees with so much love — and even today, I still wear her 20-year-old sarees with the same pride and elegance. That's when I understood that a saree is never just fabric.</p>
+          </div>
+          <div class="about__emotion reveal">
+            <span>It is emotion.</span>
+            <span>It is memory.</span>
+            <span>It is a piece of one generation carried into another.</span>
+          </div>
+          <div class="about__body reveal">
+            <p>Life moved through studies, responsibilities, and corporate life — but this dream never left me. After spending 5 years in the corporate world building businesses for others, I finally felt it was time to invest my energy and heart into building my own.</p>
+            <p>Then in August 2024, during a simple conversation with my husband Vivek on our coffee date, I finally spoke this dream out loud. That one moment became the beginning of SUVIKK — built with belief, family and friends' support, and years of silent dreaming.</p>
+            <p>Today, SUVIKK is not just a brand for us. It is our way of preserving timeless elegance in a fast-moving world.</p>
+          </div>
+        </div>
+
+        <!-- OUR VISION -->
+        <div class="about__chapter reveal">
+          <p class="section-label">Our Vision</p>
+          <h3 class="about__sub-heading">TIMELESS, EFFORTLESS,<br>DEEPLY PERSONAL</h3>
+          <div class="about__body">
+            <p>In a world of fast fashion, we want women — especially the new generation — to reconnect with the beauty, grace, and emotion of sarees beyond just occasions. We believe elegance should not fade with trends.</p>
+            <p>SUVIKK is for women who carry tradition with confidence and modernity with grace.</p>
+          </div>
+          <div class="about__vision-quote reveal">
+            Because some things are never meant to go out of style.
+          </div>
+        </div>
+
+        <!-- WHAT MAKES US DIFFERENT -->
+        <div class="about__chapter reveal">
+          <p class="section-label">What Makes SUVIKK Different</p>
+          <ul class="about__values">
+            <li class="about__value">
+              <span class="about__value-title">Sourced with Intention</span>
+              <span class="about__value-text">Every piece is thoughtfully sourced directly from weavers and handpicked with time, emotion, and care — just the way we would choose a saree for ourselves or someone we deeply love.</span>
+            </li>
+            <li class="about__value">
+              <span class="about__value-title">Curated, Not Mass-Produced</span>
+              <span class="about__value-text">We do not simply sell products. We curate pieces that feel personal, timeless, and worth holding onto for years.</span>
+            </li>
+            <li class="about__value">
+              <span class="about__value-title">Sarees That Become Memories</span>
+              <span class="about__value-text">Each saree carries softness, elegance, comfort, and a story within its threads — meant not just to be worn once, but remembered, repeated, and passed on.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- WHY SUVIKK -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why__grid">
+
+      <div class="why__reasons">
+        <p class="section-label reveal">The Difference</p>
+        <h2 class="section-title reveal">WHY WOMEN<br>CHOOSE SUVIKK</h2>
+
+        <div class="why__item reveal">
+          <span class="why__num" aria-hidden="true">01</span>
+          <div class="why__item-body">
+            <h3 class="why__item-title">Curated, Not Overwhelming</h3>
+            <p class="why__item-text">We carry fewer pieces, chosen better. Every fabric, every price point — intentional.</p>
+          </div>
+        </div>
+        <div class="why__item reveal">
+          <span class="why__num" aria-hidden="true">02</span>
+          <div class="why__item-body">
+            <h3 class="why__item-title">Unstitched Blouse, Always Included</h3>
+            <p class="why__item-text">Every saree comes with an unstitched matching blouse — because a complete saree experience should never feel like an afterthought.</p>
+          </div>
+        </div>
+        <div class="why__item reveal">
+          <span class="why__num" aria-hidden="true">03</span>
+          <div class="why__item-body">
+            <h3 class="why__item-title">Honest Pricing Across 5 Tiers</h3>
+            <p class="why__item-text">₹1,000 to ₹9,000+ — find your range without apology. Luxury isn't always about price.</p>
+          </div>
+        </div>
+        <div class="why__item reveal">
+          <span class="why__num" aria-hidden="true">04</span>
+          <div class="why__item-body">
+            <h3 class="why__item-title">Direct from Founder</h3>
+            <p class="why__item-text">Talk to Sushmita directly on WhatsApp. No chatbots, no waiting — just someone who loves sarees as much as you do.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why__quote-wrap reveal">
+        <div class="why__quote-card">
+          <span class="why__quote-ornament" aria-hidden="true">"</span>
+          <p class="why__quote-text">A saree is not just fabric. It is memory, identity, and grace — all in six yards.</p>
+          <cite class="why__quote-cite">— Sushmita, Founder · SUVIKK</cite>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- LOOKBOOK -->
+<section class="lookbook" id="lookbook">
+  <div class="container">
+    <p class="section-label reveal">From the Collection</p>
+    <h2 class="section-title reveal">LOOKBOOK</h2>
+    <div class="lookbook__grid">
+
+      <div class="lookbook__item reveal" style="--delay:0s">
+        <div class="lookbook__placeholder">
+          <svg class="lookbook__lotus" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 92 C50 92 30 70 30 50 C30 34 38 23 50 20 C62 23 70 34 70 50 C70 70 50 92 50 92Z" fill="#c4963a"/>
+            <path d="M50 92 C50 92 18 74 12 54 C8 39 16 26 28 22" stroke="#c4963a" stroke-width="1.5" fill="none"/>
+            <path d="M50 92 C50 92 82 74 88 54 C92 39 84 26 72 22" stroke="#c4963a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="50" cy="93" rx="12" ry="4" fill="#c4963a" opacity="0.2"/>
+          </svg>
+          <span class="lookbook__label">Photo Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="lookbook__item reveal" style="--delay:0.1s">
+        <div class="lookbook__placeholder">
+          <svg class="lookbook__lotus" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 92 C50 92 30 70 30 50 C30 34 38 23 50 20 C62 23 70 34 70 50 C70 70 50 92 50 92Z" fill="#c4963a"/>
+            <path d="M50 92 C50 92 18 74 12 54 C8 39 16 26 28 22" stroke="#c4963a" stroke-width="1.5" fill="none"/>
+            <path d="M50 92 C50 92 82 74 88 54 C92 39 84 26 72 22" stroke="#c4963a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="50" cy="93" rx="12" ry="4" fill="#c4963a" opacity="0.2"/>
+          </svg>
+          <span class="lookbook__label">Photo Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="lookbook__item reveal" style="--delay:0.2s">
+        <div class="lookbook__placeholder">
+          <svg class="lookbook__lotus" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 92 C50 92 30 70 30 50 C30 34 38 23 50 20 C62 23 70 34 70 50 C70 70 50 92 50 92Z" fill="#c4963a"/>
+            <path d="M50 92 C50 92 18 74 12 54 C8 39 16 26 28 22" stroke="#c4963a" stroke-width="1.5" fill="none"/>
+            <path d="M50 92 C50 92 82 74 88 54 C92 39 84 26 72 22" stroke="#c4963a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="50" cy="93" rx="12" ry="4" fill="#c4963a" opacity="0.2"/>
+          </svg>
+          <span class="lookbook__label">Photo Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="lookbook__footer reveal">
+      <p class="lookbook__ig-note">Follow <strong>@suvikkofficial</strong> on Instagram to see our latest drops.</p>
+      <a href="https://www.instagram.com/suvikkofficial" class="btn btn--navy-outline" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-label reveal">Get in Touch</p>
+    <h2 class="section-title reveal">LET'S FIND<br>YOUR SAREE</h2>
+    <div class="contact__grid">
+
+      <address class="contact__info reveal">
+        <ul class="contact__list">
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Palam Vihar, Gurgaon</strong>
+              <span class="contact__detail">B 816, B Block, Palam Vihar, Sector 2, Gurgaon – 122017</span>
+              <span class="contact__muted">Also ships from Prayagraj</span>
+            </div>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">📞</span>
+            <div>
+              <a href="tel:+918796529211" class="contact__link">+91 87965 29211</a>
+              <span class="contact__muted">WhatsApp preferred</span>
+            </div>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">📧</span>
+            <div>
+              <a href="mailto:info@suvikk.com" class="contact__link">info@suvikk.com</a>
+              <span class="contact__muted">Customer support</span>
+            </div>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong>Monday – Saturday</strong>
+              <span class="contact__muted">10:00 AM – 6:00 PM</span>
+            </div>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">📸</span>
+            <div>
+              <a href="https://www.instagram.com/suvikkofficial" class="contact__link" target="_blank" rel="noopener noreferrer">@suvikkofficial</a>
+              <span class="contact__muted">on Instagram</span>
+            </div>
+          </li>
+        </ul>
+      </address>
+
+      <div class="contact__cta reveal">
+        <div class="contact__note">
+          <p>The best way to find your perfect saree is a conversation.</p>
+          <p>Tell us your occasion, your fabric preference, your budget — and Sushmita will help you find exactly what you're looking for.</p>
+        </div>
+        <a href="https://wa.me/918796529211?text=Hi%20Sushmita!%20I%27d%20love%20to%20explore%20SUVIKK%27s%20collection.%20Can%20you%20help%20me%20find%20the%20right%20saree%3F" class="btn btn--gold btn--large" target="_blank" rel="noopener noreferrer">Chat with Sushmita on WhatsApp 🌿</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__gold-line" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/suvikk-logo.jpg" alt="SUVIKK" class="footer__logo-img" />
+      </div>
+      <p class="footer__copy">© 2026 SUVIKK. All rights reserved.</p>
+      <nav class="footer__socials" aria-label="Social links">
+        <a href="https://www.instagram.com/suvikkofficial" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="https://wa.me/918796529211?text=Hi%20Sushmita%2C%20I%20discovered%20SUVIKK%20and%20would%20love%20to%20know%20more%20about%20your%20collection!" class="footer__social-link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float" id="waFloat">
+  <div class="wa-bubble" id="waBubble">
+    👋 Looking for your perfect saree? Let's talk!
+  </div>
+  <a href="https://wa.me/918796529211?text=Hi%20Sushmita%2C%20I%20discovered%20SUVIKK%20and%20would%20love%20to%20know%20more%20about%20your%20collection!" class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with SUVIKK">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     LEAD GEN POPUP (30s trigger, once per session)
+══════════════════════════════════════════ -->
+<div class="popup-overlay" id="leadPopupOverlay" role="dialog" aria-modal="true" aria-label="Exclusive offer">
+  <div class="popup-card" id="leadPopup">
+    <button class="popup-close" id="leadPopupClose" aria-label="Close">&times;</button>
+
+    <!-- Step 1: Collect details -->
+    <div class="popup-step" id="popupStep1">
+      <div class="popup-logo" aria-hidden="true">
+        <img src="assets/suvikk-logo.jpg" alt="SUVIKK" class="popup-logo-img" />
+      </div>
+      <p class="popup-label">Launch Offer</p>
+      <h2 class="popup-title">Get 10% Off<br>Your First Order</h2>
+      <p class="popup-sub">Enter your email or WhatsApp number to receive your exclusive code.</p>
+      <div class="popup-tabs" id="popupTabs">
+        <button class="popup-tab popup-tab--active" data-target="emailField" id="tabEmail">Email</button>
+        <button class="popup-tab" data-target="phoneField" id="tabPhone">WhatsApp</button>
+      </div>
+      <div class="popup-field" id="emailField">
+        <input type="email" id="leadEmail" class="popup-input" placeholder="yourname@email.com" autocomplete="email" />
+      </div>
+      <div class="popup-field popup-field--hidden" id="phoneField">
+        <div class="popup-phone-wrap">
+          <span class="popup-phone-prefix">+91</span>
+          <input type="tel" id="leadPhone" class="popup-input popup-input--phone" placeholder="98765 43210" maxlength="10" autocomplete="tel" />
+        </div>
+      </div>
+      <button class="btn btn--gold popup-btn" id="leadSubmitBtn">Get My Code →</button>
+      <p class="popup-note">No spam, ever. Just your exclusive discount.</p>
+    </div>
+
+    <!-- Step 2: Show code -->
+    <div class="popup-step popup-step--hidden" id="popupStep2">
+      <div class="popup-success-icon" aria-hidden="true">🎉</div>
+      <p class="popup-label">Your Exclusive Code</p>
+      <h2 class="popup-title">Welcome to SUVIKK</h2>
+      <p class="popup-sub">Use this code at checkout for 10% off your first order:</p>
+      <div class="popup-code-box">
+        <span class="popup-code" id="discountCode">SUVIKK10</span>
+        <button class="popup-copy-btn" id="copyCodeBtn" aria-label="Copy code">Copy</button>
+      </div>
+      <p class="popup-copied" id="copiedMsg" aria-live="polite"></p>
+      <a href="https://wa.me/918796529211?text=Hi%20Sushmita!%20I%20have%20my%20code%20SUVIKK10%20and%20would%20love%20to%20place%20my%20first%20order!"
+         class="btn btn--gold popup-btn"
+         target="_blank"
+         rel="noopener noreferrer">Shop Now on WhatsApp 🌿</a>
+      <p class="popup-note">Share this with someone who loves sarees too ♡</p>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
