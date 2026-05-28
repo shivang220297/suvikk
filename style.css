@@ -241,8 +241,20 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
   width: auto;
   display: block;
   object-fit: contain;
-  /* Logo has matching parchment bg — blends naturally */
   mix-blend-mode: multiply;
+  /* Fade outer edges so the logo floats without a rectangle */
+  -webkit-mask-image: radial-gradient(
+    ellipse 82% 82% at 50% 50%,
+    black 42%,
+    rgba(0,0,0,0.7) 60%,
+    transparent 76%
+  );
+  mask-image: radial-gradient(
+    ellipse 82% 82% at 50% 50%,
+    black 42%,
+    rgba(0,0,0,0.7) 60%,
+    transparent 76%
+  );
 }
 
 .nav__links {
@@ -422,12 +434,26 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
   align-self: center;
 }
 .hero__logo-img {
-  width: clamp(220px, 28vw, 380px);
+  width: clamp(220px, 28vw, 400px);
   height: auto;
   display: block;
   mix-blend-mode: multiply;
-  opacity: 0.92;
-  filter: drop-shadow(0 8px 32px rgba(196,150,58,0.12));
+  opacity: 0.96;
+  /* Fade rectangular edges into background — no visible box */
+  -webkit-mask-image: radial-gradient(
+    ellipse 78% 78% at 50% 48%,
+    black 38%,
+    rgba(0,0,0,0.85) 52%,
+    rgba(0,0,0,0.3) 66%,
+    transparent 76%
+  );
+  mask-image: radial-gradient(
+    ellipse 78% 78% at 50% 48%,
+    black 38%,
+    rgba(0,0,0,0.85) 52%,
+    rgba(0,0,0,0.3) 66%,
+    transparent 76%
+  );
 }
 @media (min-width: 900px) {
   .hero__vertical { display: block; }
@@ -528,29 +554,35 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
 
 /* ── 11. ABOUT ───────────────────────────────────────── */
 .about {
-  padding-block: 5rem;
+  padding-block: 3.5rem;
   background: var(--bg-alt);
 }
 .about__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 @media (min-width: 900px) {
-  .about__grid { grid-template-columns: 1fr 1.4fr; align-items: start; gap: 5rem; }
+  .about__grid { grid-template-columns: 1fr 1.5fr; align-items: start; gap: 3.5rem; }
 }
 
 .about__visual {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
+  gap: 0.75rem;
+  max-width: 380px;
+}
+@media (min-width: 900px) {
+  .about__visual {
+    position: sticky;
+    top: calc(var(--nav-h) + 1.5rem);
+  }
 }
 .about__logo-card {
   border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--bg);
+  overflow: visible;
+  border: none;
+  background: transparent;
   line-height: 0;
 }
 .about__logo-img {
@@ -559,6 +591,20 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
   display: block;
   mix-blend-mode: multiply;
   object-fit: cover;
+  -webkit-mask-image: radial-gradient(
+    ellipse 88% 88% at 50% 46%,
+    black 40%,
+    rgba(0,0,0,0.8) 56%,
+    rgba(0,0,0,0.2) 72%,
+    transparent 82%
+  );
+  mask-image: radial-gradient(
+    ellipse 88% 88% at 50% 46%,
+    black 40%,
+    rgba(0,0,0,0.8) 56%,
+    rgba(0,0,0,0.2) 72%,
+    transparent 82%
+  );
 }
 .about__caption {
   font-family: var(--font-ui);
@@ -571,15 +617,15 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
 .about__body {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2.25rem;
-  font-size: 0.98rem;
-  line-height: 1.82;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.96rem;
+  line-height: 1.78;
 }
 .about__values {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.9rem;
 }
 .about__value {
   padding-left: 1.1rem;
@@ -873,7 +919,19 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
   width: auto;
   display: block;
   mix-blend-mode: multiply;
-  opacity: 0.88;
+  opacity: 0.9;
+  -webkit-mask-image: radial-gradient(
+    ellipse 82% 82% at 50% 50%,
+    black 42%,
+    rgba(0,0,0,0.7) 60%,
+    transparent 76%
+  );
+  mask-image: radial-gradient(
+    ellipse 82% 82% at 50% 50%,
+    black 42%,
+    rgba(0,0,0,0.7) 60%,
+    transparent 76%
+  );
 }
 .footer__copy {
   font-family: var(--font-ui);
@@ -957,27 +1015,27 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
 ══════════════════════════════════════════════════════════ */
 
 .about__dedication {
-  max-width: 680px;
+  max-width: 720px;
   margin-inline: auto;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   text-align: center;
-  padding: 1.75rem 2rem;
+  padding: 1.1rem 1.75rem;
   border: 1px solid var(--border);
-  border-top: 3px solid var(--primary);
+  border-top: 2px solid var(--primary);
   background: var(--bg-card);
   border-radius: var(--radius);
 }
 .about__dedication-text {
   font-family: var(--font-display);
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
   font-style: italic;
-  color: var(--text);
-  line-height: 1.75;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .about__chapter {
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 .about__chapter:last-child {
@@ -988,38 +1046,36 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
 
 .about__sub-heading {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-size: clamp(1.25rem, 2.8vw, 1.75rem);
   font-weight: 700;
   letter-spacing: 0.07em;
   color: var(--secondary);
   line-height: 1.15;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .about__emotion {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  margin-block: 1.5rem;
-  padding-left: 1.25rem;
-  border-left: 3px solid var(--primary);
+  gap: 0.1rem;
+  margin-block: 0.9rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--primary);
 }
 .about__emotion span {
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-style: italic;
   color: var(--secondary);
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-.about__vision-quote {
-  margin-top: 1.25rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  font-style: italic;
-  font-weight: 600;
-  color: var(--primary);
-  letter-spacing: 0.02em;
+.about__chapter .section-title,
+.about__chapter .section-label {
+  margin-bottom: 1rem;
+}
+.about__chapter .section-label {
+  margin-bottom: 0.4rem;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -1269,4 +1325,14 @@ body.has-cursor:is(a, button):hover ~ .c-ring {
   margin-top: -0.5rem;
   margin-bottom: 0.75rem;
   letter-spacing: 0.04em;
+}
+
+.about__vision-quote {
+  margin-top: 0.9rem;
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 0.02em;
 }
